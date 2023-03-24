@@ -7,11 +7,11 @@ else:
     def tr(x):
         Glist = [0]*(x+1)
         Glist[0],Glist[1],i = [1],[1,1],2
-        while 0 in Gspisok:
+        while 0 in Glist:
             Glist[i] = [0]*(i+1)
             ser = []
-            for j in range(len(Gspisok[i-1])-1):
-                ser.append(Gspisok[i-1][j]+Gspisok[i-1][j+1])
+            for j in range(len(Glist[i-1])-1):
+                ser.append(Glist[i-1][j]+Glist[i-1][j+1])
             Glist[i] = [1]+ser+[1]
             i+=1
         return Glist
