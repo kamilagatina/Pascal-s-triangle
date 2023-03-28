@@ -1,4 +1,5 @@
 #The input to the program is a natural number n. Write a program that prints the first n lines of Pascal's triangle.
+#Введите натуральное число n. Программа выводит первые n строк треугольника Паскаля. (Нумерация начинается с первой строки)
 n = int(input())  
 if n == 1:
     print(1)
